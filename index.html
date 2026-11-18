@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeoVibez Music — Soby × Nanther · Compositores y productores</title>
+  <meta name="description" content="NeoVibez Music: composición y producción musical de Soby y Nanther. Catálogo de canciones para artistas, sellos, publicidad y sync.">
+  <meta name="theme-color" content="#07070a">
+  <!-- OCULTA A GOOGLE: borra la línea siguiente cuando el contenido sea el definitivo -->
+  <meta name="robots" content="noindex">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, Instagram, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neovibezmusic.com/">
+  <meta property="og:title" content="NeoVibez Music — Soby × Nanther">
+  <meta property="og:description" content="Composición y producción musical. Escucha nuestro catálogo.">
+  <meta property="og:image" content="https://neovibezmusic.com/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ====================== NAVEGACIÓN ====================== -->
+  <header class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="NeoVibez Music, inicio">
+      <span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>NEOVIBEZ</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#duo">El dúo</a>
+      <a href="#studio">Studio</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-sm btn-acid nav-cta" href="#contacto">Hablemos</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- ====================== PORTADA ====================== -->
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-video" id="heroVideo" aria-hidden="true"></div>
+      <canvas id="waves" aria-hidden="true"></canvas>
+
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="dot"></span>Compositores &amp; productores · Soby × Nanther</p>
+        <h1 class="hero-title" data-fit aria-label="NeoVibez"><span class="fit"><span class="t1">NEO</span><span class="t2 outline">VIBEZ</span></span></h1>
+        <div class="hero-bottom">
+          <!-- EDITA: frase principal -->
+          <p class="hero-lead">Escribimos y producimos canciones que se quedan. Catálogo disponible para artistas, sellos, publicidad y sync.</p>
+          <div class="hero-actions">
+            <a class="btn btn-acid" href="#catalogo">Explorar catálogo <span aria-hidden="true">↘</span></a>
+            <button class="btn btn-ghost" type="button" data-video="0"><span class="tri" aria-hidden="true"></span>Ver showreel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CINTA DE GÉNEROS ====================== -->
+    <div class="marquee" id="marquee" aria-hidden="true"></div>
+
+    <!-- ====================== MANIFIESTO ====================== -->
+    <section class="manifesto" id="manifiesto">
+      <p class="label">(00) — Quiénes somos</p>
+      <!-- EDITA: texto de presentación -->
+      <p class="manifesto-text" data-words>Somos Soby y Nanther: dos compositores obsesionados con la melodía perfecta. Del primer acorde al máster final, creamos canciones con identidad para artistas, marcas y pantallas.</p>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <!-- ====================== CATÁLOGO ====================== -->
+    <section class="section" id="catalogo">
+      <header class="section-head" data-reveal>
+        <p class="label">(01) — Catálogo</p>
+        <h2>Canciones<br><em>listas para sonar</em></h2>
+        <!-- EDITA -->
+        <p class="section-sub">Una selección de nuestro repertorio. Dale al play, filtra por género y escríbenos si alguna encaja con tu proyecto.</p>
+      </header>
+      <div class="filters" id="filters" role="group" aria-label="Filtrar por género"></div>
+      <ol class="tracks" id="tracks"></ol>
+      <p class="catalog-note" data-reveal>¿Buscas algo concreto? <a href="#contacto">Pídenos el catálogo completo <span aria-hidden="true">→</span></a></p>
+    </section>
+
+    <!-- ====================== EL DÚO ====================== -->
+    <section class="section" id="duo">
+      <header class="section-head" data-reveal>
+        <p class="label">(02) — El dúo</p>
+        <h2>Dos cabezas,<br><em>un sonido</em></h2>
+        <!-- EDITA -->
+        <p class="section-sub">Cada canción pasa por los dos. Lo que no nos pone la piel de gallina a ambos, no sale del studio.</p>
+      </header>
+      <div class="duo-grid" id="duoGrid"></div>
+    </section>
+
+    <!-- ====================== STUDIO ====================== -->
+    <section class="section section-alt" id="studio">
+      <header class="section-head" data-reveal>
+        <p class="label">(03) — Studio</p>
+        <h2>Donde pasa<br><em>la magia</em></h2>
+        <!-- EDITA -->
+        <p class="section-sub">Horas de sesiones, cables, cafés y estribillos. Así se ve nuestro día a día.</p>
+      </header>
+      <div class="bento" id="gallery"></div>
+    </section>
+
+    <!-- ====================== VÍDEOS ====================== -->
+    <section class="section" id="videos">
+      <header class="section-head" data-reveal>
+        <p class="label">(04) — Vídeos</p>
+        <h2>Míranos<br><em>en acción</em></h2>
+        <!-- EDITA -->
+        <p class="section-sub">Showreel, sesiones y el proceso detrás de cada tema.</p>
+      </header>
+      <div id="videoFeature" data-reveal></div>
+      <div class="video-list" id="videoList"></div>
+    </section>
+
+    <!-- ====================== SERVICIOS ====================== -->
+    <section class="section" id="servicios">
+      <header class="section-head" data-reveal>
+        <p class="label">(05) — Servicios</p>
+        <h2>Qué hacemos<br><em>por tu proyecto</em></h2>
+        <!-- EDITA -->
+        <p class="section-sub">Trabajamos con artistas, sellos, editoriales, agencias y productoras.</p>
+      </header>
+      <ul class="services" id="services"></ul>
+    </section>
+
+    <!-- ====================== CONTACTO ====================== -->
+    <section class="section contact" id="contacto">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <p class="label" data-reveal>(06) — Contacto</p>
+      <!-- EDITA: titular de contacto -->
+      <h2 class="contact-title" data-reveal>¿Hacemos<br>un <em>hit</em>?</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <p class="contact-lead">Cuéntanos qué necesitas: una canción, una sesión, una licencia o el catálogo completo. Respondemos rápido.</p>
+          <a class="mail" data-email href="#"></a>
+          <ul class="socials" id="socials"></ul>
+        </div>
+
+        <form class="form" id="contactForm" data-reveal novalidate>
+          <div class="field">
+            <label for="fName">Nombre</label>
+            <input id="fName" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="field">
+            <label for="fEmail">Email</label>
+            <input id="fEmail" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="field">
+            <label for="fType">Proyecto</label>
+            <select id="fType" name="type">
+              <option>Quiero una canción</option>
+              <option>Licencia / sync</option>
+              <option>Sesión de composición</option>
+              <option>Producción</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fMsg">Mensaje</label>
+            <textarea id="fMsg" name="message" rows="4" placeholder="Cuéntanos tu idea…" required></textarea>
+          </div>
+          <button class="btn btn-acid btn-block" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== PIE ====================== -->
+  <footer class="footer">
+    <div class="footer-word" data-fit aria-hidden="true"><span class="fit">NEOVIBEZ</span></div>
+    <div class="footer-row">
+      <p>© <span id="year">2026</span> NeoVibez Music · Soby × Nanther</p>
+      <ul class="footer-links" id="footSocials"></ul>
+      <a href="#top" class="to-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <!-- ====================== REPRODUCTOR ====================== -->
+  <div class="player" id="player" role="region" aria-label="Reproductor">
+    <div class="p-cover" id="pCover"></div>
+    <div class="p-meta">
+      <strong id="pTitle">—</strong>
+      <span id="pArtist">—</span>
+    </div>
+    <div class="p-ctrl">
+      <button type="button" id="pPrev" aria-label="Anterior"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+      <button type="button" id="pPlay" class="p-play" aria-label="Reproducir o pausar">
+        <svg class="i-play" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 4v16l13-8z"/></svg>
+        <svg class="i-pause" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+      </button>
+      <button type="button" id="pNext" aria-label="Siguiente"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+    </div>
+    <div class="wave" id="pWave" role="slider" aria-label="Progreso" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"></div>
+    <span class="p-time" id="pTime">0:00 / 0:00</span>
+    <button type="button" class="p-close" id="pClose" aria-label="Cerrar reproductor">✕</button>
+  </div>
+
+  <!-- ====================== MODAL (fotos y vídeo) ====================== -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Visor">
+    <button type="button" class="modal-close" id="mClose" aria-label="Cerrar">✕</button>
+    <button type="button" class="modal-nav prev" id="mPrev" aria-label="Anterior">←</button>
+    <div class="modal-stage">
+      <div class="modal-body" id="modalBody"></div>
+      <p class="modal-cap" id="modalCap"></p>
+    </div>
+    <button type="button" class="modal-nav next" id="mNext" aria-label="Siguiente">→</button>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
